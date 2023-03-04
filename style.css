@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background: #4f6d7a;
+  color: #e8dab2;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+  text-align: center;
+}
+
+#game {
+  display: flex;
+  gap: 3px;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+
+.cell {
+  background: #eaeaea;
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: darkslategray;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.cell:not(.occupied):hover {
+  background: #dfdfdf;
+}
+
+.over {
+  cursor: not-allowed;
+}
+
+#reset {
+  all: unset;
+  color: black;
+  font-size: 2em;
+  transition: all 0.5s ease-in-out;
+}
+
+#reset:hover {
+  cursor: pointer;
+  color: white;
+  transform-origin: center center;
+  transform: rotate(-360deg);
+}
+
+.winner {
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  font-size: 2em;
+  text-align: center;
+  margin: 0;
+}
