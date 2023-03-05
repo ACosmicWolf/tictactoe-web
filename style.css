@@ -25,6 +25,7 @@ h1 {
   gap: 3px;
   flex-direction: column;
   position: relative;
+  background: #dfdfdf;
 }
 
 .row {
@@ -34,10 +35,9 @@ h1 {
 }
 
 .cell {
-  background: #eaeaea;
+  background: #4f6d7a;
   width: 80px;
   height: 80px;
-  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
